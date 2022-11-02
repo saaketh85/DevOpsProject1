@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My webpage</title>
+    <style>
+        img{
+            float: right;
+            border-radius: 50px;
+        }
+        h1{
+            background-color:aqua;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        form{
+            text-align: right;
+        }
+    </style>
+</head>
 <body>
+    <img src="data:image/png;base64,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" alt="ServiceNow" width=10%>
+    <h1 class="hs">ServiceNow</h1>
+    <h2>As a ticketing tool</h2>
+        <div><label for="user">Personal development instance</label></div><br>
+        <div>First name<input type="text" name="username"></div><br>
+        <div>Last name<input type="text" name="lastname"></div><br>
+        Email<input type="email" name>
 
-<p>This paragraph is generated in first push</p>
-<p>This paragraph is generated through webhook trigger.</p>
-<p>This paragraph is generated through 2nd webhook trigger.</p>
-<p>This paragraph is generated through 3rd webhook trigger.</p>
-<p>This paragraph is generated through Final Trigger</p>
-
+        Password<input type="password"><br>
+        <div>
+            <label for="country"><b>Select origin country</b></label>
+            <div>
+            <select name="Country" id="count">Country
+            <option value="us">USA</option>
+            <option value="in">IND</option>
+            <option value="rs">RUS</option>
+            </select><br>
+            <input type="checkbox" name="authentication">I'm not a robot <br>
+        </div>
+        <a href="/PAge1.html"><input type="button" value="sign up"></a>
+    </form>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ_zM8iveDqvf1vap3upBDkloRehpcackHxA&usqp=CAU">
+    <ul>
+        <li><a href="https://developer.servicenow.com/dev.do">HOME</a></li>
+        <li><a href="https://community.servicenow.com/community?id=community_forum&sys_id=75291a2ddbd897c068c1fb651f9619f3">Community</a></li>
+        <li><a href="https://www.servicenow.com/products-by-category.html">Product</a></li>
+        <li><a href="https://www.servicenow.com/contact-us.html">Contact Us</a></li>
+    </ul>
 </body>
 </html>
-
